@@ -9,3 +9,5 @@ You've been asked to refactor the function `deterministicPartitionKey` in [`dpk.
 You will be graded on the exhaustiveness and quality of your unit tests, the depth of your refactor, and the level of insight into your thought process provided by the written explanation.
 
 ## Your Explanation Here
+
+I choose to make this function clean and readable as possible with guard clauses. Guard clauses remove nested if and else statements make and easier to understand when the desired result is found. In the case of `deterministicPartitionKey` and refactored the main part of the logic out to a function `extractPartitionKeyCandidate` to allow handle of extracting partitionKeyCandidate separate the getting `partitionKey` from `MAX_PARTITION_KEY_LENGTH` requirement.
